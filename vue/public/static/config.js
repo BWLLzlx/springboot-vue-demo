@@ -1,0 +1,3 @@
+window.server = {
+    url: "localhost"
+}
