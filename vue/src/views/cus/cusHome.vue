@@ -6,6 +6,15 @@
       </el-carousel-item>
     </el-carousel>
   </div>
+  <div style="width: 80%;margin: 10px 400px 10px 400px ">
+    <div style="width: 100%"><h1 style="font-size: 60px;color: dodgerblue">欢迎来到电子商城</h1></div>
+    <br>
+    <div style="width: 100%"><h1 style="font-size: 60px;color: dodgerblue">基于springboot-vue</h1></div>
+    <br>
+    <div style="width: 100%"><h1 style="font-size: 60px;color: dodgerblue">19网络工程梁浩潮制作</h1></div>
+    <br>
+    <div style="width: 100%"><h1 style="font-size: 60px;color: dodgerblue">201930342165</h1></div>
+  </div>
 
 </template>
 

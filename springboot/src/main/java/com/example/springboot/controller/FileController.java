@@ -20,11 +20,7 @@ import java.util.List;
 @RequestMapping("/files")
 public class FileController {
 
-    @Value("9090")
-    private String port;
 
-//    写死的localhost作为地址
-    private static final String ip = "http://localhost";
 
     /**
      *上传接口
@@ -42,7 +38,7 @@ public class FileController {
 
         String rootFilePath = System.getProperty("user.dir") + "/springboot/src/main/resources/files/" + flag + "_" + originalFilename; //获取上传的目的路径,localhost
         FileUtil.writeBytes(file.getBytes(),rootFilePath); //把文件写入到目的路径
-        return Result.success(ip + ":" + port + "/files/" + flag); //返回结果 url ,文件的下载接口 ip + 端口 + files + flag
+        return Result.success("http://101.35.255.239:9090/files/" + flag); //返回结果 url ,文件的下载接口 ip + 端口 + files + flag
     }
 
     /**

@@ -22,11 +22,11 @@
         <el-table-column prop="price" label="单价" sortable />
         <el-table-column prop="createTime" label="出版时间" sortable />
 <!--        &lt;!&ndash;封面部分&ndash;&gt;-->
-<!--        <el-table-column label="封面">-->
-<!--          <template #default="scope">-->
-<!--            <el-image style="width: 100px; height: 100px" :src="scope.row.cover" :preview-src-list="[scope.row.cover]"></el-image>-->
-<!--          </template>-->
-<!--        </el-table-column>-->
+        <el-table-column label="封面">
+          <template #default="scope">
+            <el-image style="width: 100px; height: 100px" :src="scope.row.cover" :preview-src-list="[scope.row.cover]"></el-image>
+          </template>
+        </el-table-column>
         <!--旁边的操作-->
         <el-table-column fixed="right" prop="operation" label="操作" width="120">
           <template #default="scope">
